@@ -4,19 +4,19 @@ const titulo = require('../src/titulo');
 // convenio
 
 test('should get convenio bar code', () => { 
-    expect(convenio.getBarCode('816700000000010936599702411310797039001433708318')).toBe(
-        "81670000000010936599704113107970300143370831"
+    expect(convenio.getBarCode('816800000000010936599702420220707039001433708318')).toBe(
+        "81680000000010936599704202207070300143370831"
     );
 });
 
 test('should get convenio ammount', () => { 
-    expect(convenio.getValue('816700000000010936599702411310797039001433708318')).toBe(
+    expect(convenio.getValue('816800000000010936599702420220707039001433708318')).toBe(
         "0.10"
     );
 });
 
 test('should get convenio expiration date', () => { 
-    expect(convenio.getDate('816700000000010936599702420220707039001433708318')).toBe(
+    expect(convenio.getDate('816800000000010936599702420220707039001433708318')).toBe(
         "2022-07-07"
     );
 });
